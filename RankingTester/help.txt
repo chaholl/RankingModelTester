@@ -1,0 +1,24 @@
+﻿
+SharePoint 2010 Ranking Model Tester       
+www.chaholl.com                   
+
+
+This console app can be used for testing custom ranking models in SharePoint Server 2010.
+
+The app accepts the following parameters:
+
+Site url - This is the URL that will be used  to connect to SharePoint (eg. http://mySharepointSite)
+Query - This is the test query that will be executed using keyword query syntax (eg. testing isdocument:true)
+Ranking model path - This optional parameter is the path to a custom ranking model to be used. (eg. c:\rankingmodel.xml)
+
+Some examples usages:
+
+Chaholl.RankingTester.exe "http://foo" "beetroot filetype:pdf" "c:\rankingmodels\test1.xml"
+
+or
+
+Chaholl.RankingTester.exe "http://foo" "beetroot filetype:pdf" 
+
+
+The app will execute the given query once without the ranking model and again with the ranking model displaying the rank in both cases. 
+
